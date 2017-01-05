@@ -5,7 +5,7 @@ from apk import APK
 
 
 def test():
-    apk_path = "/home/tdoly/com.android.vending_090150.apk"
+    apk_path = "test01.apk"
     apkf = APK(apk_path)
     print apkf.cert_text
     print apkf.file_md5
