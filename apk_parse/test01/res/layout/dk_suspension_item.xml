@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:background="@drawable/dk_suspension_item_bg_selector" android:descendantFocusability="blocksDescendants" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <ImageView android:layout_gravity="center" android:id="@id/dk_suspension_item_iv" android:background="@drawable/dk_suspend_icon_default" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="5.0dip" android:maxWidth="25.0dip" android:maxHeight="25.0dip" android:layout_centerVertical="true" />
+    <LinearLayout android:gravity="center_vertical" android:layout_gravity="center" android:orientation="vertical" android:layout_width="0.0dip" android:layout_height="fill_parent" android:layout_marginLeft="5.0dip" android:layout_weight="1.0" android:layout_toRightOf="@id/dk_suspension_item_iv">
+        <LinearLayout android:gravity="center" android:orientation="horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content">
+            <TextView android:textColor="@android:color/white" android:gravity="center" android:id="@id/dk_suspension_num_tv" android:background="@drawable/dk_suspension_item_num" android:layout_width="20.0dip" android:layout_height="20.0dip" android:layout_marginRight="3.0dip" />
+            <TextView android:textColor="@android:color/black" android:ellipsize="end" android:layout_gravity="center" android:id="@id/dk_suspension_item_tv" android:layout_width="wrap_content" android:layout_height="wrap_content" android:singleLine="true" />
+        </LinearLayout>
+        <TextView android:textSize="10.0sp" android:textColor="@android:color/darker_gray" android:id="@id/dk_suspension_item_describe_tv" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="3.0dip" />
+    </LinearLayout>
+    <ImageButton android:layout_gravity="center" android:id="@id/dk_suspension_item_ib" android:background="@drawable/dk_suspension_item_download_selector" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="5.0dip" android:layout_alignParentRight="true" android:layout_centerVertical="true" />
+</LinearLayout>

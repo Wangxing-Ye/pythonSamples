@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:orientation="vertical" android:background="@color/dk_transparent" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <LinearLayout android:orientation="horizontal" android:background="@drawable/bg_yellow" android:layout_width="fill_parent" android:layout_height="65.0dip" android:layout_marginTop="13.0dip">
+            <LinearLayout android:orientation="vertical" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_marginLeft="6.0dip" android:layout_weight="237.0">
+                <TextView android:textSize="14.0sp" android:textColor="@color/dk_color_000000" android:gravity="center_vertical" android:id="@id/dk_text_view_other_pay" android:paddingLeft="4.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="13.0dip" android:text="@string/dk_quickpay" />
+                <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_marginTop="4.0dip">
+                    <ImageView android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/dk_ic_credit_card_tip" />
+                    <TextView android:textSize="12.0sp" android:textColor="@color/dk_color_61B11F" android:layout_gravity="center" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="3.0dip" android:text="@string/dk_tip_credit_security" />
+                </LinearLayout>
+            </LinearLayout>
+            <Button android:textSize="12.0sp" android:textColor="#ff333333" android:gravity="center" android:layout_gravity="center_vertical" android:id="@id/dk_btn_bank_manage" android:background="@drawable/dk_payment_btn_bank_selector" android:layout_width="0.0dip" android:layout_height="35.0dip" android:layout_marginRight="3.0dip" android:text="@string/dk_btn_bank_manage" android:layout_weight="135.0" />
+        </LinearLayout>
+        <ImageView android:id="@id/dk_image_view_divider" android:background="@drawable/dk_divider" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="2.0dip" />
+        <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent">
+            <ScrollView android:scrollbarThumbVertical="@drawable/dk_scrollbar_gray" android:layout_width="fill_parent" android:layout_height="0.0dip" android:fillViewport="true" android:layout_weight="5.0" android:fadeScrollbars="false">
+                <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent">
+                    <LinearLayout android:gravity="center_horizontal" android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="13.0dip">
+                        <LinearLayout android:orientation="vertical" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_weight="247.0">
+                            <LinearLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                                <TextView android:textSize="14.0sp" android:textColor="#ff333333" android:id="@id/dk_tv_tip_select_title" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/dk_tip_choose_recharge_amount" />
+                                <TextView android:textSize="14.0sp" android:textColor="#ffff3300" android:id="@id/dk_tv_tip_select_content" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/dk_tip_choose_recharge_ratio" />
+                            </LinearLayout>
+                            <LinearLayout android:orientation="horizontal" android:id="@id/dk_layout_info" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="4.0dip">
+                                <TextView android:textSize="12.0sp" android:textColor="#ff666666" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/dk_tip_pay_desc" />
+                            </LinearLayout>
+                            <LinearLayout android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="13.0dip">
+                                <TextView android:textSize="12.0sp" android:textColor="#ff999999" android:id="@id/dk_tv_tip_select_link" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/dk_text_credit_card_bind_title" />
+                            </LinearLayout>
+                        </LinearLayout>
+                        <LinearLayout android:gravity="center_vertical" android:orientation="vertical" android:id="@id/dk_layout_support_bank" android:background="@drawable/dk_bg_support_bank" android:layout_width="0.0dip" android:layout_height="32.0dip" android:layout_weight="125.0">
+                            <TextView android:textSize="12.0sp" android:textColor="#ff999999" android:layout_gravity="center" android:id="@id/dk_text_view_support_bank" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/dk_tip_support_bank" />
+                        </LinearLayout>
+                    </LinearLayout>
+                    <LinearLayout android:orientation="vertical" android:id="@id/dk_layout_link_credit_card" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="7.0dip">
+                        <com.duoku.platform.single.view.DKListViewExtend android:scrollbarThumbVertical="@drawable/dk_scrollbar_gray" android:id="@id/dk_list_view_bind_credit" android:background="@drawable/dk_bg_kubi_no_engouth" android:scrollbars="vertical" android:fadingEdge="none" android:layout_width="fill_parent" android:layout_height="120.0dip" android:listSelector="@color/dk_transparent" android:cacheColorHint="#00000000" android:divider="@drawable/dk_payment_dialog_dot_bg" android:dividerHeight="1.0dip" />
+                    </LinearLayout>
+                    <RelativeLayout android:gravity="center_vertical" android:id="@id/dk_layout_other_credit_card" android:background="@drawable/dk_bg_other_pay" android:paddingTop="8.0dip" android:paddingBottom="8.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="8.0dip">
+                        <TextView android:textSize="12.0sp" android:textColor="#ff333333" android:gravity="center_vertical" android:id="@id/dk_text_view_other_credit_card" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="4.0dip" android:text="@string/dk_tip_other_bank_title" />
+                        <ImageView android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="13.0dip" android:src="@drawable/dk_icon_item_arrow" android:layout_alignParentRight="true" />
+                    </RelativeLayout>
+                    <LinearLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="13.0dip">
+                        <Button android:textSize="16.0sp" android:textColor="#ffffffff" android:gravity="center" android:id="@id/dk_btn_quickpay_dopay" android:background="@drawable/dk_payment_btn_orange_selector" android:layout_width="0.0dip" android:layout_height="42.0dip" android:text="@string/dk_btn_string_pay" android:layout_weight="1.0" />
+                    </LinearLayout>
+                </LinearLayout>
+            </ScrollView>
+            <RelativeLayout android:gravity="bottom|center" android:layout_gravity="center_horizontal" android:id="@id/dk_layout_bottom_logo" android:layout_width="fill_parent" android:layout_height="0.0dip" android:layout_weight="1.5">
+                <include android:layout_alignParentBottom="true" android:layout_centerHorizontal="true" layout="@layout/dk_payment_bottom" />
+            </RelativeLayout>
+        </LinearLayout>
+    </LinearLayout>
+</RelativeLayout>

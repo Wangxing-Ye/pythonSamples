@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:background="@drawable/new_bg_dialog" android:layout_width="wrap_content" android:layout_height="wrap_content" android:minHeight="280.0dip"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <include android:layout_height="0.0px" android:layout_weight="1.0" layout="@layout/dk_dialog_header" />
+    <FrameLayout android:layout_width="fill_parent" android:layout_height="0.0px" android:layout_weight="3.0">
+        <LinearLayout android:layout_gravity="left" android:orientation="horizontal" android:id="@id/line_vertical" android:layout_width="2.0dip" android:layout_height="fill_parent" android:layout_marginLeft="54.0dip">
+            <View android:background="#ffcccccc" android:layout_width="1.0dip" android:layout_height="fill_parent" />
+            <View android:background="#ffffffff" android:layout_width="1.0dip" android:layout_height="fill_parent" />
+        </LinearLayout>
+        <RelativeLayout android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="12.0dip">
+            <Button android:textSize="16.0sp" android:textColor="#ff333333" android:id="@id/btnCardRechargeYidong" android:background="@drawable/transparent" android:layout_width="64.0dip" android:layout_height="34.0dip" android:layout_marginTop="12.0dip" android:text="@string/dk_payment_channel_rechargecard_cmobile" android:layout_alignParentLeft="true" />
+            <Button android:textSize="16.0sp" android:textColor="#ff333333" android:gravity="center" android:id="@id/btnCardRechargeLiantong" android:background="@drawable/transparent" android:layout_width="64.0dip" android:layout_height="34.0dip" android:layout_marginTop="12.0dip" android:text="@string/dk_payment_channel_rechargecard_cunicom" android:layout_below="@id/btnCardRechargeYidong" android:layout_alignLeft="@id/btnCardRechargeYidong" />
+            <Button android:textSize="16.0sp" android:textColor="#ff333333" android:id="@id/btnCardRechargeDianxin" android:background="@drawable/transparent" android:layout_width="64.0dip" android:layout_height="34.0dip" android:layout_marginTop="12.0dip" android:text="@string/dk_payment_channel_rechargecard_ctelcom" android:layout_below="@id/btnCardRechargeLiantong" android:layout_alignLeft="@id/btnCardRechargeLiantong" />
+            <ScrollView android:scrollbars="none" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginRight="10.0dip" android:layout_toRightOf="@id/btnCardRechargeYidong">
+                <include layout="@layout/dk_dialog_rechargecard_body" />
+            </ScrollView>
+        </RelativeLayout>
+    </FrameLayout>
+    <include android:layout_height="0.0px" android:layout_weight="1.0" layout="@layout/dk_dialog_footer" />
+</LinearLayout>

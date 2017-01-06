@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple Computer//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+    <dict>
+        <key>frames</key>
+        <dict>
+            <key>Bg_GameScene_2_Frame.jpg</key>
+            <dict>
+                <key>frame</key>
+                <string>{{2,2},{800,480}}</string>
+                <key>offset</key>
+                <string>{0,0}</string>
+                <key>rotated</key>
+                <true/>
+                <key>sourceColorRect</key>
+                <string>{{0,0},{800,480}}</string>
+                <key>sourceSize</key>
+                <string>{800,480}</string>
+            </dict>
+        </dict>
+        <key>metadata</key>
+        <dict>
+            <key>format</key>
+            <integer>2</integer>
+            <key>realTextureFileName</key>
+            <string>Bg_GameScene_2.jpg</string>
+            <key>size</key>
+            <string>{512,1024}</string>
+            <key>smartupdate</key>
+            <string>$TexturePacker:SmartUpdate:cf9b9bc02d79acbd8ea3110302ad94fe$</string>
+            <key>textureFileName</key>
+            <string>Bg_GameScene_2.jpg</string>
+        </dict>
+    </dict>
+</plist>

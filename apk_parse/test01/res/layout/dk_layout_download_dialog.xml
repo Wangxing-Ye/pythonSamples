@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:id="@id/dk_parent_panel" android:background="@drawable/new_bg_dialog" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <include layout="@layout/dk_dialog_header" />
+    <LinearLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="20.0dip" android:layout_marginTop="10.0dip" android:layout_marginRight="20.0dip">
+        <TextView android:textSize="14.0sp" android:textColor="@android:color/black" android:gravity="center" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/dk_txt_game_name" />
+        <TextView android:textSize="14.0sp" android:textColor="@android:color/black" android:gravity="center_vertical" android:id="@id/txtGameName" android:paddingLeft="5.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:singleLine="true" android:editable="false" />
+    </LinearLayout>
+    <LinearLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="20.0dip" android:layout_marginTop="10.0dip" android:layout_marginRight="20.0dip">
+        <TextView android:textSize="14.0sp" android:textColor="@android:color/black" android:gravity="center" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/dk_txt_game_size" />
+        <TextView android:textSize="14.0sp" android:textColor="@android:color/black" android:ellipsize="none" android:gravity="center_vertical" android:id="@id/txtGameSize" android:paddingLeft="5.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:singleLine="true" />
+    </LinearLayout>
+    <LinearLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="20.0dip" android:layout_marginTop="10.0dip" android:layout_marginRight="20.0dip">
+        <TextView android:textSize="14.0sp" android:textColor="#fff08f1e" android:id="@id/txtGameContent" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+    </LinearLayout>
+    <ImageView android:id="@id/gameImage" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="12.0dip" android:layout_marginTop="2.0dip" android:layout_marginRight="12.0dip" />
+    <LinearLayout android:gravity="center" android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="20.0dip" android:layout_marginTop="10.0dip" android:layout_marginRight="20.0dip" android:layout_marginBottom="10.0dip">
+        <Button android:textSize="16.0sp" android:textColor="@android:color/white" android:id="@id/startAndSaveDownloadbtn" android:background="@drawable/dk_btn_pointer_game_selector" android:paddingLeft="20.0dip" android:paddingRight="20.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="@string/dk_txt_start_download" />
+        <Button android:textSize="16.0sp" android:textColor="@android:color/black" android:id="@id/nomalDownloadbtn" android:paddingLeft="20.0dip" android:paddingTop="10.0dip" android:paddingRight="20.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+    </LinearLayout>
+</LinearLayout>

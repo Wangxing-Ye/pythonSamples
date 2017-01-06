@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:layout_width="320.0dip" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:orientation="vertical" android:id="@id/dk_layout_payment_dialog" android:background="@drawable/new_bg_dialog1" android:padding="10.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_margin="5.0dip">
+        <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="8.0dip" android:layout_marginRight="8.0dip">
+            <RelativeLayout android:gravity="center_vertical" android:layout_gravity="center" android:id="@id/dk_layout_dialog_title" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="8.0dip">
+                <TextView android:textSize="20.0sp" android:textColor="#ff333333" android:gravity="center" android:id="@id/dk_dialog_tv_tip_title" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/dialog_bind_bank" android:layout_centerHorizontal="true" android:layout_centerVertical="true" />
+            </RelativeLayout>
+            <LinearLayout android:visibility="visible" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="8.0dip">
+                <View android:id="@id/dk_dialog_view_divider" android:background="@color/dk_color_666666" android:layout_width="wrap_content" android:layout_height="1.0dip" />
+                <ImageView android:background="@drawable/dk_payment_dialog_dot_bg" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="1.0px" android:layout_marginTop="4.0dip" android:layout_marginBottom="4.0dip" />
+            </LinearLayout>
+        </LinearLayout>
+        <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="8.0dip" android:layout_marginRight="8.0dip" android:layout_marginBottom="8.0dip">
+            <LinearLayout android:orientation="vertical" android:id="@id/dk_dialog_linear_content" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+            <ListView android:scrollbarThumbVertical="@drawable/dk_scrollbar_gray" android:id="@id/dk_dialog_list_view_bind_credit" android:visibility="gone" android:scrollbars="vertical" android:fadingEdge="none" android:layout_width="fill_parent" android:layout_height="280.0dip" android:cacheColorHint="#00000000" android:divider="@drawable/goodsinfo_divide" />
+            <TextView android:textSize="16.0sp" android:textColor="#ff333333" android:gravity="center_horizontal" android:id="@id/dk_dialog_tv_tip_content" android:visibility="visible" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="12.0dip" android:layout_marginBottom="12.0dip" android:text="@string/dialog_unbind_bank" />
+        </LinearLayout>
+        <LinearLayout android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginBottom="4.0dip">
+            <Button android:textSize="16.0sp" android:textColor="@color/dk_color_ffffff" android:gravity="center" android:id="@id/dk_dialog_btn_cancel" android:background="@drawable/dk_btn_pointer_game_selector" android:layout_width="fill_parent" android:layout_height="45.0dip" android:layout_marginLeft="6.0dip" android:layout_marginRight="6.0dip" android:text="@string/dk_dialog_string_close" />
+        </LinearLayout>
+    </LinearLayout>
+    <ImageView android:id="@id/dk_dialog_iv_close" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/dk_quickpay_dialog_shutdown_selector" android:layout_alignParentRight="true" />
+</RelativeLayout>

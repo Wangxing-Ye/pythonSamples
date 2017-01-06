@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:id="@id/dk_parent_panel" android:background="@drawable/new_bg_dialog" android:layout_width="wrap_content" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <TextView android:textSize="16.0sp" android:textColor="@android:color/black" android:id="@id/dk_dialog_title" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="12.0dip" android:layout_marginTop="15.0dip" android:layout_marginRight="12.0dip" android:text="@string/dk_text_quit_game_confirm_txt" android:singleLine="true" />
+    <include layout="@layout/dk_dialog_header" />
+    <HorizontalScrollView android:id="@id/dk_games_scrollview" android:scrollbars="none" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="12.0dip" android:layout_marginTop="10.0dip" android:layout_marginRight="12.0dip" android:layout_marginBottom="15.0dip">
+        <LinearLayout android:gravity="center" android:layout_gravity="center" android:orientation="horizontal" android:id="@id/category_layout" android:layout_width="wrap_content" android:layout_height="wrap_content">
+            <GridView android:id="@id/dk_game_recomend_arrays" android:layout_width="fill_parent" android:layout_height="wrap_content" android:listSelector="@null" android:drawSelectorOnTop="false" android:cacheColorHint="#00000000" android:horizontalSpacing="15.0dip" android:stretchMode="columnWidth" android:numColumns="auto_fit" />
+        </LinearLayout>
+    </HorizontalScrollView>
+    <LinearLayout android:orientation="vertical" android:id="@id/dk_game_pointer_area_layout" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="12.0dip" android:layout_marginTop="10.0dip" android:layout_marginRight="12.0dip" android:layout_marginBottom="15.0dip" />
+    <View android:id="@id/dk_dialog_stub_view" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="15.0dip" />
+    <LinearLayout android:orientation="horizontal" android:id="@id/dk_dialog_btn_area" android:layout_width="280.0dip" android:layout_height="50.0dip" android:layout_marginLeft="12.0dip" android:layout_marginRight="12.0dip" android:layout_marginBottom="20.0dip">
+        <Button android:textSize="16.0sp" android:textColor="@android:color/white" android:gravity="center" android:id="@id/dk_btn_pointer_game_recommend" android:background="@drawable/dk_btn_pointer_game_selector" android:layout_width="0.0px" android:layout_height="wrap_content" android:text="@string/dk_btn_pointer_game_recommend_txt" android:layout_weight="1.0" />
+        <View android:layout_width="14.0dip" android:layout_height="wrap_content" />
+        <Button android:textSize="16.0sp" android:textColor="@android:color/black" android:gravity="center" android:id="@id/dk_btn_quit_game" android:background="@drawable/dk_btn_confirm_quit_selector" android:layout_width="0.0px" android:layout_height="wrap_content" android:text="@string/dk_btn_quit_game_txt" android:layout_weight="1.0" />
+    </LinearLayout>
+</LinearLayout>

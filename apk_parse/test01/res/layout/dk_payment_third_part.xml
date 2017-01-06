@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView android:scrollbars="none" android:layout_width="fill_parent" android:layout_height="fill_parent" android:fillViewport="false"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <LinearLayout android:orientation="vertical" android:id="@id/title_linearlayout" android:background="@drawable/bg_yellow" android:padding="5.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <RelativeLayout android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="5.0dip" android:layout_marginRight="5.0dip">
+                <TextView android:textSize="16.0sp" android:textColor="@android:color/black" android:id="@id/TextView01" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/pay_current_account" android:singleLine="true" />
+                <TextView android:textSize="16.0sp" android:textColor="@android:color/black" android:id="@id/dkTxtUsername" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/pay_purchase_item" android:singleLine="true" android:layout_alignParentRight="true" />
+            </RelativeLayout>
+            <View android:background="#ffcccccc" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="1.0dip" android:layout_margin="5.0dip" />
+            <RelativeLayout android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="5.0dip" android:layout_marginRight="5.0dip">
+                <TextView android:textSize="16.0sp" android:textColor="@android:color/black" android:id="@id/TextView02" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/pay_commodityname" android:singleLine="true" />
+                <TextView android:textSize="16.0sp" android:textColor="@android:color/black" android:id="@id/dkTxtGoodsName" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/pay_commodityname" android:singleLine="true" android:layout_alignParentRight="true" />
+            </RelativeLayout>
+            <View android:background="#ffcccccc" android:layout_width="fill_parent" android:layout_height="1.0dip" android:layout_margin="5.0dip" />
+            <RelativeLayout android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="5.0dip" android:layout_marginRight="5.0dip">
+                <TextView android:textSize="16.0sp" android:textColor="@android:color/black" android:id="@id/TextView03" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/pay_payamount" android:singleLine="true" />
+                <TextView android:textSize="16.0sp" android:textColor="@android:color/black" android:id="@id/dkTxtGoodsPrice" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/tip_card_recharge_price" android:singleLine="true" android:layout_alignParentRight="true" />
+            </RelativeLayout>
+        </LinearLayout>
+        <LinearLayout android:orientation="vertical" android:id="@id/pay_recent_linearlayout" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="10.0dip">
+            <TextView android:textSize="16.0sp" android:textColor="@color/dk_color_838383" android:id="@id/dkTxtRecentPaymethod" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/dialog_lastpay" android:singleLine="true" />
+            <TableLayout android:layout_gravity="center" android:id="@id/pay_recent_tablelayout" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+        </LinearLayout>
+        <LinearLayout android:orientation="vertical" android:id="@id/pay_other_linearlayout" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="10.0dip" android:layout_marginBottom="10.0dip">
+            <TextView android:textSize="16.0sp" android:textColor="@color/dk_color_838383" android:id="@id/dkTxtOtherPaymethod" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/dk_other_pay_mode" android:singleLine="true" />
+            <TableLayout android:layout_gravity="center" android:id="@id/pay_other_tablelayout" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+        </LinearLayout>
+    </LinearLayout>
+</ScrollView>

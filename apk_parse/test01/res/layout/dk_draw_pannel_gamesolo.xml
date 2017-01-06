@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <TextView android:textSize="12.0sp" android:textColor="#ff666666" android:id="@id/dk_draw_title_tv" android:visibility="visible" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginBottom="12.0dip" android:text="@string/dk_draw_download_and_enjoy" />
+    <LinearLayout android:layout_width="fill_parent" android:layout_height="50.0dip">
+        <ImageView android:layout_gravity="center_vertical" android:id="@id/dk_draw_icon_iv" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/bg_dialog" />
+        <LinearLayout android:layout_gravity="center_vertical" android:orientation="vertical" android:layout_width="0.0dip" android:layout_height="fill_parent" android:layout_weight="1.0">
+            <TextView android:textSize="16.0sp" android:textColor="#ff333333" android:id="@id/dk_draw_name_tv" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="6.0dip" android:layout_marginTop="6.0dip" android:text="@string/dk_guodongtowerdefend" />
+            <TextView android:textSize="14.0sp" android:textColor="#ff999999" android:id="@id/dk_draw_des_tv" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="6.0dip" android:layout_marginTop="2.0dip" android:text="234.6M" />
+        </LinearLayout>
+        <Button android:textSize="14.0sp" android:textColor="@color/dk_color_ffffff" android:layout_gravity="center_vertical" android:id="@id/dk_draw_download_btn" android:background="@drawable/dk_draw_gamesolo_btn_selector" android:layout_width="74.0dip" android:layout_height="32.0dip" android:text="@string/dk_txt_start_download" />
+    </LinearLayout>
+</LinearLayout>

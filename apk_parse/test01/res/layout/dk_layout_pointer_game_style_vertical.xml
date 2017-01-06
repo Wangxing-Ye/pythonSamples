@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:id="@id/dk_pointer_game_bglayout" android:background="@drawable/dk_pointer_game_recommend_bg_default" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <RelativeLayout android:layout_width="fill_parent" android:layout_height="34.0dip" android:layout_alignParentBottom="true">
+        <Button android:id="@id/dk_btn_download_game" android:background="@drawable/dk_btn_download_icon_selector" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="12.0dip" android:layout_alignParentRight="true" android:layout_centerVertical="true" />
+        <TextView android:textSize="16.0sp" android:textColor="@android:color/white" android:id="@id/dk_game_title_txt" android:paddingLeft="10.0dip" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content" android:singleLine="true" android:layout_toLeftOf="@id/dk_btn_download_game" android:layout_centerVertical="true" />
+    </RelativeLayout>
+    <TextView android:textSize="12.0sp" android:textColor="@android:color/black" android:id="@id/dk_game_content_txt" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="5.0dip" android:singleLine="true" />
+</RelativeLayout>

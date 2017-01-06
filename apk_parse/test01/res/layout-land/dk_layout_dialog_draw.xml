@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:padding="15.0dip" android:visibility="visible" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:orientation="vertical" android:background="@drawable/new_bg_dialog" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_centerInParent="true">
+        <include layout="@layout/dk_dialog_header_draw" />
+        <LinearLayout android:orientation="horizontal" android:id="@id/dk_dialog_draw_main_linear" android:layout_width="fill_parent" android:layout_height="wrap_content" android:minWidth="350.0dip">
+            <LinearLayout android:orientation="vertical" android:id="@id/dk_dialog_draw_foot_wrap" android:layout_width="0.0dip" android:layout_height="fill_parent" android:layout_weight="10.0">
+                <ScrollView android:id="@id/scrollView1" android:layout_width="fill_parent" android:layout_height="0.0dip" android:layout_weight="1.0">
+                    <LinearLayout android:orientation="vertical" android:id="@id/dk_dialog_draw_container1" android:paddingLeft="20.0dip" android:paddingTop="20.0dip" android:paddingRight="20.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+                </ScrollView>
+                <LinearLayout android:orientation="vertical" android:id="@id/btnContainer2" android:paddingLeft="15.0dip" android:paddingRight="15.0dip" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                    <LinearLayout android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_weight="1.0">
+                        <Button android:textSize="18.0sp" android:textColor="@color/dk_color_333333" android:textColorHint="@color/dk_chess_rankdate_text_color" android:gravity="center" android:id="@id/dk_dialog_btn3" android:background="@drawable/dk_btn_confirm_quit_selector" android:visibility="visible" android:layout_width="fill_parent" android:layout_height="45.0dip" android:text="@string/Cancel" android:maxEms="5" android:layout_weight="1.0" />
+                        <Button android:textSize="18.0sp" android:textColor="@color/dk_color_ffffff" android:gravity="center" android:id="@id/dk_dialog_btn4" android:background="@drawable/dk_btn_pointer_game_selector" android:layout_width="fill_parent" android:layout_height="45.0dip" android:text="@string/Ensure" android:layout_weight="1.0" />
+                    </LinearLayout>
+                </LinearLayout>
+                <include layout="@layout/dk_dialog_footer_draw" />
+            </LinearLayout>
+            <LinearLayout android:orientation="vertical" android:id="@id/dk_dialog_draw_unfixed_linear" android:layout_width="0.0dip" android:layout_height="fill_parent" android:layout_weight="17.0">
+                <LinearLayout android:gravity="center" android:orientation="vertical" android:id="@id/dk_dialog_draw_container2" android:paddingLeft="14.0dip" android:paddingTop="20.0dip" android:paddingRight="16.0dip" android:layout_width="fill_parent" android:layout_height="0.0dip" android:minHeight="500.0dip" android:layout_weight="1.0" />
+                <LinearLayout android:orientation="vertical" android:id="@id/btnContainer" android:paddingLeft="15.0dip" android:paddingTop="2.0dip" android:paddingRight="15.0dip" android:paddingBottom="4.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                    <LinearLayout android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginBottom="10.0dip" android:layout_weight="1.0">
+                        <Button android:textSize="18.0sp" android:textColor="@color/dk_color_333333" android:textColorHint="@color/dk_chess_rankdate_text_color" android:gravity="center" android:id="@id/dk_dialog_btn1" android:background="@drawable/dk_btn_confirm_quit_selector" android:visibility="visible" android:layout_width="fill_parent" android:layout_height="45.0dip" android:text="@string/Cancel" android:maxEms="5" android:layout_weight="1.0" />
+                        <Button android:textSize="18.0sp" android:textColor="@color/dk_color_ffffff" android:gravity="center" android:id="@id/dk_dialog_btn2" android:background="@drawable/dk_btn_pointer_game_selector" android:layout_width="fill_parent" android:layout_height="45.0dip" android:text="@string/Ensure" android:layout_weight="1.0" />
+                    </LinearLayout>
+                </LinearLayout>
+            </LinearLayout>
+        </LinearLayout>
+    </LinearLayout>
+</RelativeLayout>

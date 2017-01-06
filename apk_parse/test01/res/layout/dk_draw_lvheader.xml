@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginBottom="14.0dip"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <View android:layout_gravity="center_vertical" android:id="@id/dk_draw_decorate_view1" android:background="#ffbbbbbb" android:layout_width="0.0dip" android:layout_height="1.0dip" android:layout_weight="1.0" />
+    <TextView android:textColor="#ff666666" android:id="@id/dk_draw_title_tv" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_margin="5.0dip" android:text="@string/dk_draw_downloadcancontinueenjoy" />
+    <View android:layout_gravity="center_vertical" android:id="@id/dk_draw_decorate_view2" android:background="#ffbbbbbb" android:layout_width="0.0dip" android:layout_height="1.0dip" android:layout_weight="1.0" />
+</LinearLayout>

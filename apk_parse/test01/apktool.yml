@@ -1,0 +1,27 @@
+!!brut.androlib.meta.MetaInfo
+apkFileName: test01.apk
+compressionType: false
+doNotCompress:
+- arsc
+- dat
+- jar
+- zip
+isFrameworkApk: false
+packageInfo:
+  forcedPackageId: '127'
+  renameManifestPackage: null
+sdkInfo:
+  minSdkVersion: '7'
+sharedLibrary: false
+unknownFiles:
+  CopyrightDeclaration.xml: '8'
+  mmiap.xml: '8'
+  VERSION: '8'
+usesFramework:
+  ids:
+  - 1
+  tag: null
+version: 2.2.0
+versionInfo:
+  versionCode: '4'
+  versionName: '3.1'

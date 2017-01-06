@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <TextView android:textSize="12.0sp" android:textColor="#ff333333" android:gravity="center" android:id="@id/item_banklist_tv_bankname" android:layout_width="0.0dip" android:layout_height="40.0dip" android:text="@string/dialog_bankname" android:layout_weight="103.0" />
+    <RelativeLayout android:gravity="center" android:layout_width="0.0dip" android:layout_height="fill_parent" android:layout_weight="42.0">
+        <ImageView android:id="@id/item_banklist_iv_credit" android:layout_width="20.0dip" android:layout_height="20.0dip" android:src="@drawable/new_icon_tick" android:scaleType="fitXY" />
+    </RelativeLayout>
+    <RelativeLayout android:gravity="center" android:layout_width="0.0dip" android:layout_height="fill_parent" android:layout_weight="42.0">
+        <ImageView android:id="@id/item_banklist_iv_debit" android:layout_width="20.0dip" android:layout_height="20.0dip" android:src="@drawable/new_icon_tick" android:scaleType="fitXY" android:layout_weight="3.0" />
+    </RelativeLayout>
+</LinearLayout>

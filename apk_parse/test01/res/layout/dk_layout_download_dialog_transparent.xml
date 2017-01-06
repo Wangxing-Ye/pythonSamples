@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:id="@id/dk_parent_panel" android:background="@drawable/new_bg_dialog_transparent" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <RelativeLayout android:layout_width="fill_parent" android:layout_height="40.0dip" android:minWidth="280.0dip">
+        <ImageView android:id="@id/dkMainHeadBack" android:padding="12.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/dk_download_back_selector" android:layout_alignParentLeft="true" android:layout_centerInParent="true" />
+        <ImageView android:id="@id/dkMainHeadClose" android:padding="12.0dip" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/dk_pay_close_selector" android:layout_alignParentRight="true" android:layout_centerInParent="true" />
+        <LinearLayout android:gravity="center" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_centerInParent="true">
+            <ImageView android:id="@id/dkMainHeadTitle" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="10.0dip" android:src="@drawable/title_icon" />
+            <TextView android:textSize="18.0sp" android:textColor="@color/dk_color_ffffff" android:gravity="center" android:id="@id/dkMainHeadTxt" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="@string/dk_payment_dialog_title" />
+        </LinearLayout>
+    </RelativeLayout>
+    <View android:background="#ffcccccc" android:layout_width="fill_parent" android:layout_height="1.0dip" android:layout_marginLeft="10.0dip" android:layout_marginTop="5.0dip" android:layout_marginRight="10.0dip" />
+    <LinearLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="20.0dip" android:layout_marginTop="10.0dip" android:layout_marginRight="20.0dip">
+        <TextView android:textSize="14.0sp" android:textColor="@android:color/white" android:gravity="center" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/dk_txt_game_name" />
+        <TextView android:textSize="14.0sp" android:textColor="@android:color/white" android:gravity="center_vertical" android:id="@id/txtGameName" android:paddingLeft="5.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:singleLine="true" android:editable="false" />
+    </LinearLayout>
+    <LinearLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="20.0dip" android:layout_marginTop="10.0dip" android:layout_marginRight="20.0dip">
+        <TextView android:textSize="14.0sp" android:textColor="@android:color/white" android:gravity="center" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/dk_txt_game_size" />
+        <TextView android:textSize="14.0sp" android:textColor="@android:color/white" android:ellipsize="none" android:gravity="center_vertical" android:id="@id/txtGameSize" android:paddingLeft="5.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:singleLine="true" />
+    </LinearLayout>
+    <LinearLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="20.0dip" android:layout_marginTop="10.0dip" android:layout_marginRight="20.0dip">
+        <TextView android:textSize="14.0sp" android:textColor="#fff08f1e" android:id="@id/txtGameContent" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+    </LinearLayout>
+    <ImageView android:id="@id/gameImage" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="12.0dip" android:layout_marginTop="2.0dip" android:layout_marginRight="12.0dip" />
+    <LinearLayout android:gravity="center" android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="20.0dip" android:layout_marginTop="10.0dip" android:layout_marginRight="20.0dip" android:layout_marginBottom="10.0dip">
+        <Button android:textSize="16.0sp" android:textColor="@android:color/white" android:id="@id/startAndSaveDownloadbtn" android:background="@drawable/dk_btn_pointer_game_selector" android:paddingLeft="20.0dip" android:paddingRight="20.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="@string/dk_txt_start_download" />
+        <Button android:textSize="16.0sp" android:textColor="@android:color/black" android:id="@id/nomalDownloadbtn" android:paddingLeft="20.0dip" android:paddingTop="10.0dip" android:paddingRight="20.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+    </LinearLayout>
+</LinearLayout>

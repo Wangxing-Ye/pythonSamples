@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:id="@id/dk_layout_payment_dialog" android:padding="8.0dip" android:layout_width="345.0dip" android:layout_height="fill_parent" android:layout_margin="10.0dip"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <RelativeLayout android:gravity="center_vertical" android:layout_gravity="center" android:id="@id/dk_layout_dialog_title" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="8.0dip">
+            <TextView android:textSize="16.0sp" android:textColor="#ff333333" android:gravity="center" android:id="@id/dk_dialog_tv_tip_title" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/dialog_checkcode" android:layout_centerHorizontal="true" android:layout_centerVertical="true" />
+            <ImageView android:id="@id/dk_dialog_iv_close" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/dk_payment_dialog_close_selector" android:layout_alignParentRight="true" />
+        </RelativeLayout>
+        <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="8.0dip">
+            <ImageView android:background="@drawable/dk_payment_dialog_dot_bg" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="1.0px" android:layout_marginTop="4.0dip" android:layout_marginBottom="4.0dip" />
+            <View android:id="@id/view1" android:background="@color/dk_color_666666" android:layout_width="wrap_content" android:layout_height="1.0dip" />
+        </LinearLayout>
+    </LinearLayout>
+    <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="13.0dip">
+        <LinearLayout android:gravity="center_vertical" android:layout_gravity="center_vertical" android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <EditText android:textSize="16.0sp" android:textColor="#ff333333" android:gravity="center_vertical" android:id="@id/dk_et_bind_mobile_message" android:background="@drawable/dk_payment_edittext_selector" android:paddingLeft="7.0dip" android:focusable="true" android:focusableInTouchMode="true" android:layout_width="0.0dip" android:layout_height="37.0dip" android:layout_marginLeft="2.0dip" android:hint="@string/dk_hint_mobile_message_validate" android:layout_weight="233.0" android:inputType="number" />
+            <Button android:textSize="16.0sp" android:textColor="@color/dk_color_0066cc" android:gravity="center" android:id="@id/dk_dialog_btn_bind_message" android:background="@drawable/dk_payment_dialog_getmsg_selector" android:layout_width="0.0dip" android:layout_height="40.0dip" android:layout_marginLeft="8.0dip" android:text="@string/dk_btn_string_get_verify_code" android:layout_weight="130.0" />
+        </LinearLayout>
+        <TextView android:textSize="14.0sp" android:textColor="@color/dk_color_ff3300" android:gravity="center_vertical" android:id="@id/dk_dialog_tv_tip_code" android:visibility="invisible" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="2.0dip" android:text="@string/dk_tip_input_message" />
+    </LinearLayout>
+    <LinearLayout android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="2.0dip">
+        <Button android:textSize="16.0sp" android:textColor="@color/dk_color_333333" android:gravity="center" android:id="@id/dk_dialog_btn_cancel" android:background="@drawable/dk_payment_dialog_cancel_selector" android:layout_width="0.0dip" android:layout_height="45.0dip" android:layout_marginRight="3.0dip" android:text="@string/dk_cancel" android:layout_weight="1.0" />
+        <Button android:textSize="16.0sp" android:textColor="@color/dk_gamesdk_white" android:gravity="center" android:id="@id/dk_dialog_btn_pay" android:background="@drawable/dk_payment_btn_orange_selector" android:layout_width="0.0dip" android:layout_height="42.0dip" android:layout_marginLeft="4.0dip" android:text="@string/dk_btn_string_pay" android:layout_weight="1.0" />
+    </LinearLayout>
+</LinearLayout>

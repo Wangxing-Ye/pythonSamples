@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple Computer//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+    <dict>
+        <key>frames</key>
+        <dict>
+            <key>zombie_bljs_dead_src.png</key>
+            <dict>
+                <key>frame</key>
+                <string>{{2,2},{318,158}}</string>
+                <key>offset</key>
+                <string>{20,-69}</string>
+                <key>rotated</key>
+                <false/>
+                <key>sourceColorRect</key>
+                <string>{{40,157},{318,158}}</string>
+                <key>sourceSize</key>
+                <string>{358,334}</string>
+            </dict>
+        </dict>
+        <key>metadata</key>
+        <dict>
+            <key>format</key>
+            <integer>2</integer>
+            <key>realTextureFileName</key>
+            <string>zombie_bljs_dead.png</string>
+            <key>size</key>
+            <string>{322,162}</string>
+            <key>smartupdate</key>
+            <string>$TexturePacker:SmartUpdate:242f6828d26feb51bcb6ac58ef76e364$</string>
+            <key>textureFileName</key>
+            <string>zombie_bljs_dead.png</string>
+        </dict>
+    </dict>
+</plist>

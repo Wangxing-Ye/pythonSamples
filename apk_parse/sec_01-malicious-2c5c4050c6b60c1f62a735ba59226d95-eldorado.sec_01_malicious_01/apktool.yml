@@ -1,0 +1,22 @@
+!!brut.androlib.meta.MetaInfo
+apkFileName: sec_01-malicious-2c5c4050c6b60c1f62a735ba59226d95-eldorado.sec_01_malicious_01.apk
+compressionType: false
+doNotCompress:
+- arsc
+isFrameworkApk: false
+packageInfo:
+  forcedPackageId: '127'
+  renameManifestPackage: null
+sdkInfo:
+  minSdkVersion: '18'
+  targetSdkVersion: '23'
+sharedLibrary: false
+unknownFiles: {}
+usesFramework:
+  ids:
+  - 1
+  tag: null
+version: 2.2.0
+versionInfo:
+  versionCode: '1'
+  versionName: '1.0'

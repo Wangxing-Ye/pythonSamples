@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:background="@drawable/tip_dialog_background" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:id="@id/topLine" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="8.0dip" android:layout_marginTop="5.0dip" android:layout_alignParentTop="true">
+        <ImageView android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/info" android:scaleType="fitXY" />
+        <TextView android:textSize="18.0sp" android:textColor="#ff666666" android:id="@id/txtTitle" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="5.0dip" android:text="@string/tip_deal_result" />
+    </LinearLayout>
+    <LinearLayout android:orientation="vertical" android:id="@id/line_xian" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="5.0dip" android:layout_below="@id/topLine">
+        <TextView android:background="#ffcccccc" android:layout_width="fill_parent" android:layout_height="1.0px" />
+        <TextView android:background="#ffffffff" android:layout_width="fill_parent" android:layout_height="1.0px" />
+    </LinearLayout>
+    <TextView android:textSize="18.0sp" android:textColor="#ff666666" android:gravity="center" android:id="@id/txtMessage" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="10.0dip" android:text="@string/dk_payemnt_dialog_cc" android:layout_below="@id/line_xian" />
+    <LinearLayout android:orientation="vertical" android:id="@id/line_xian_1" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="10.0dip" android:layout_below="@id/txtMessage">
+        <TextView android:background="#ffcccccc" android:layout_width="fill_parent" android:layout_height="1.0px" />
+        <TextView android:background="#ffffffff" android:layout_width="fill_parent" android:layout_height="1.0px" />
+    </LinearLayout>
+    <Button android:textSize="18.0sp" android:textColor="#ff666666" android:gravity="center" android:id="@id/btnOK" android:background="@drawable/btn_tip_click_bg" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="5.0dip" android:layout_below="@id/line_xian_1" android:layout_centerHorizontal="true" />
+</RelativeLayout>

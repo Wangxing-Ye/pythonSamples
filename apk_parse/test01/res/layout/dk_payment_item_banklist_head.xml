@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="horizontal" android:background="#ffd0d0d0" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <TextView android:textSize="12.0sp" android:textColor="@color/dk_color_666666" android:gravity="center" android:id="@id/tv1" android:layout_width="0.0dip" android:layout_height="23.0dip" android:text="@string/dialog_bankname" android:layout_weight="103.0" />
+    <View android:id="@id/view1" android:background="@color/dk_color_666666" android:layout_width="1.0dip" android:layout_height="fill_parent" android:layout_marginTop="8.0dip" android:layout_marginBottom="8.0dip" />
+    <TextView android:textSize="12.0sp" android:textColor="@color/dk_color_666666" android:gravity="center" android:id="@id/tv2" android:layout_width="0.0dip" android:layout_height="fill_parent" android:text="@string/dialog_credit" android:layout_weight="42.0" />
+    <View android:id="@id/View01" android:background="@color/dk_color_666666" android:layout_width="1.0dip" android:layout_height="fill_parent" android:layout_marginTop="8.0dip" android:layout_marginBottom="8.0dip" />
+    <TextView android:textSize="12.0sp" android:textColor="@color/dk_color_666666" android:gravity="center" android:id="@id/tv3" android:layout_width="0.0dip" android:layout_height="fill_parent" android:text="@string/dialog_debit" android:layout_weight="42.0" />
+</LinearLayout>

@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <ImageView android:layout_gravity="center_horizontal" android:id="@id/dk_draw_title_iv" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/dk_draw_icon_happy" />
+    <TextView android:textSize="14.0sp" android:textColor="#ff333333" android:layout_gravity="center_horizontal" android:id="@id/dk_draw_title_main_tv" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="10.0dip" android:text="@string/dk_draw_norecord" />
+    <LinearLayout android:layout_gravity="center_horizontal" android:orientation="vertical" android:id="@id/dk_draw_group_alert" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="14.0dip">
+        <TextView android:textSize="14.0sp" android:textColor="#ffd42e22" android:layout_gravity="center_horizontal" android:id="@id/dk_draw_alert_line1_tv" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/dk_draw_left_time_three" />
+        <TextView android:textSize="14.0sp" android:textColor="#ffd42e22" android:layout_gravity="center_horizontal" android:id="@id/dk_draw_alert_line2_tv" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="8.0dip" android:text="@string/dk_draw_next_time" />
+    </LinearLayout>
+</LinearLayout>

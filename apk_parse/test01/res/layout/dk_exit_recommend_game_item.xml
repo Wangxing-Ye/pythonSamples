@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:gravity="center_horizontal" android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <ImageView android:id="@id/dk_recommend_game_icon" android:layout_width="48.0dip" android:layout_height="48.0dip" android:src="@drawable/dk_recommend_game_bg_default" android:scaleType="fitXY" />
+    <TextView android:textSize="15.0sp" android:textColor="@android:color/darker_gray" android:gravity="center" android:id="@id/dk_recommend_game_title" android:layout_width="wrap_content" android:layout_height="wrap_content" android:singleLine="true" />
+    <TextView android:textSize="12.0sp" android:textColor="@android:color/darker_gray" android:gravity="center" android:id="@id/dk_recommend_game_num_tv" android:layout_width="wrap_content" android:layout_height="wrap_content" android:singleLine="true" />
+</LinearLayout>

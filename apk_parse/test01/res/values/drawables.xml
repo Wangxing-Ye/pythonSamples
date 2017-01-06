@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <item type="drawable" name="tab_button_normal">#ffffffff</item>
+    <item type="drawable" name="tab_button_pressed">#ff333333</item>
+</resources>

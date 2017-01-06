@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:background="@drawable/dk_suspension_item_bg_selector" android:descendantFocusability="blocksDescendants" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:gravity="center_vertical" android:layout_gravity="center" android:orientation="vertical" android:layout_width="0.0dip" android:layout_height="fill_parent" android:layout_marginLeft="5.0dip" android:layout_weight="1.0" android:layout_toRightOf="@id/dk_suspension_item_iv">
+        <TextView android:textColor="@android:color/black" android:ellipsize="end" android:id="@id/id_tv_title" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="消灭星星礼包" android:singleLine="true" />
+        <TextView android:textSize="10.0sp" android:textColor="@android:color/darker_gray" android:id="@id/id_tv_validtime" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="3.0dip" android:text="有效日期：2015年3月29日" />
+    </LinearLayout>
+    <Button android:textColor="#ff5694de" android:layout_gravity="center" android:id="@id/id_btn_exe" android:background="@drawable/dk_draw_historyrecord_btn_selector" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="5.0dip" android:text="查看" android:layout_alignParentRight="true" android:layout_centerVertical="true" />
+</LinearLayout>

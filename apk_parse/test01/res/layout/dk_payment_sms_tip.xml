@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:gravity="left" android:orientation="vertical" android:id="@id/dkTipSMS" android:background="@android:color/transparent" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="5.0dip" android:minHeight="90.0dip"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <TextView android:textSize="15.0sp" android:textColor="@color/dk_color_666666" android:id="@id/dkTxtGoodsTip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/dialog_purchaseinfo" android:singleLine="true" />
+    <View android:background="#ffcccccc" android:layout_width="fill_parent" android:layout_height="1.0dip" android:layout_margin="2.0dip" android:layout_below="@id/dkMainHeadClose" />
+    <LinearLayout android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="5.0dip" android:layout_marginRight="5.0dip">
+        <TextView android:textSize="15.0sp" android:textColor="@color/dk_color_333333" android:id="@id/TextView01" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/pay_purchase_item" android:singleLine="true" />
+        <TextView android:textSize="15.0sp" android:textColor="@color/dk_color_333333" android:ellipsize="marquee" android:id="@id/dkTxtGoodsName" android:paddingLeft="15.0dip" android:paddingRight="2.0dip" android:focusable="true" android:focusableInTouchMode="true" android:layout_width="fill_parent" android:layout_height="wrap_content" android:scrollHorizontally="true" android:singleLine="true" android:marqueeRepeatLimit="marquee_forever" />
+    </LinearLayout>
+    <View android:background="#ffcccccc" android:layout_width="fill_parent" android:layout_height="1.0dip" android:layout_margin="2.0dip" />
+    <LinearLayout android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="5.0dip" android:layout_marginRight="5.0dip">
+        <TextView android:textSize="15.0sp" android:textColor="@color/dk_color_333333" android:id="@id/TextView02" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/dialog_gamemname" />
+        <TextView android:textSize="15.0sp" android:textColor="@color/dk_color_333333" android:ellipsize="marquee" android:id="@id/dkTxtGameName" android:paddingLeft="15.0dip" android:paddingRight="2.0dip" android:focusable="true" android:layout_width="fill_parent" android:layout_height="wrap_content" android:scrollHorizontally="true" android:singleLine="true" android:marqueeRepeatLimit="1" />
+    </LinearLayout>
+    <View android:background="#ffcccccc" android:layout_width="fill_parent" android:layout_height="1.0dip" android:layout_margin="2.0dip" />
+    <LinearLayout android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="5.0dip" android:layout_marginRight="5.0dip">
+        <TextView android:textSize="15.0sp" android:textColor="@color/dk_color_333333" android:id="@id/TextView03" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/pay_payamount" android:singleLine="true" />
+        <TextView android:textSize="15.0sp" android:textColor="@color/dk_color_333333" android:ellipsize="marquee" android:id="@id/dkTxtGoodsPrice" android:paddingLeft="15.0dip" android:paddingRight="2.0dip" android:focusable="true" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/tip_card_recharge_price" android:scrollHorizontally="true" android:singleLine="true" android:marqueeRepeatLimit="marquee_forever" />
+    </LinearLayout>
+    <View android:background="#ffcccccc" android:layout_width="fill_parent" android:layout_height="1.0dip" android:layout_margin="2.0dip" />
+    <LinearLayout android:layout_gravity="center_vertical" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="5.0dip" android:layout_marginRight="5.0dip">
+        <TextView android:textSize="15.0sp" android:textColor="@color/dk_color_333333" android:id="@id/dkTxtPayMethod" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/dialog_paymethods" android:singleLine="true" android:layout_centerVertical="true" />
+        <include android:id="@id/dk_pay_dropdown" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="15.0dip" android:layout_alignParentRight="true" android:layout_centerVertical="true" layout="@layout/dk_new_payment_dropdown" />
+    </LinearLayout>
+    <View android:background="#ffcccccc" android:layout_width="fill_parent" android:layout_height="1.0dip" android:layout_margin="2.0dip" />
+    <TextView android:textSize="12.0sp" android:textColor="@color/dk_color_d0d0d0" android:id="@id/dkTxtWarning" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="5.0dip" android:text="@string/dialog_paymoney" android:singleLine="true" />
+    <Button android:textSize="16.0sp" android:textColor="@android:color/white" android:id="@id/dkBtnConfirmPay" android:background="@drawable/dk_btn_pointer_game_selector" android:layout_width="fill_parent" android:layout_height="48.0dip" android:text="@string/dk_payment_channel_confirm" />
+</LinearLayout>

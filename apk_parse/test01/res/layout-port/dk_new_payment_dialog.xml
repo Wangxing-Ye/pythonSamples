@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:gravity="center" android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <RelativeLayout android:gravity="center" android:id="@id/dk_viewcontainer" android:layout_width="350.0dip" android:layout_height="fill_parent" android:layout_marginLeft="20.0dip" android:layout_marginTop="10.0dip" android:layout_marginRight="20.0dip" android:layout_marginBottom="10.0dip">
+        <LinearLayout android:orientation="vertical" android:id="@id/dkMainViewLayout" android:background="@drawable/new_bg_dialog" android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <include android:layout_height="wrap_content" layout="@layout/dk_dialog_header" />
+            <LinearLayout android:orientation="vertical" android:id="@id/hintContainer" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="20.0dip" android:layout_marginTop="10.0dip" android:layout_marginRight="20.0dip" android:layout_marginBottom="10.0dip">
+                <TextView android:textAppearance="?android:textAppearanceMedium" android:textColor="@color/dk_color_000000" android:gravity="center" android:id="@id/dk_dialog_tv_main" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginBottom="10.0dip" android:text="@string/dialog_confirmexit" />
+                <LinearLayout android:orientation="horizontal" android:id="@id/btnContainer" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_weight="3.0">
+                    <Button android:textSize="18.0sp" android:textColor="@color/dk_color_333333" android:textColorHint="@color/dk_chess_rankdate_text_color" android:gravity="center" android:id="@id/dk_dialog_btn1" android:background="@drawable/dk_btn_confirm_quit_selector" android:visibility="visible" android:layout_width="fill_parent" android:layout_height="45.0dip" android:text="@string/dk_btn_string_return" android:maxEms="5" android:layout_weight="1.0" android:layout_alignParentLeft="true" android:layout_alignParentTop="true" />
+                    <Button android:textSize="18.0sp" android:textColor="@color/dk_color_ffffff" android:gravity="center" android:id="@id/dk_dialog_btn2" android:background="@drawable/dk_btn_pointer_game_selector" android:layout_width="fill_parent" android:layout_height="45.0dip" android:text="@string/dk_dialog_string_close" android:layout_weight="1.0" android:layout_alignParentLeft="true" android:layout_alignParentTop="true" />
+                </LinearLayout>
+            </LinearLayout>
+            <LinearLayout android:orientation="vertical" android:id="@id/pay_recent_linearlayout" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                <TextView android:textAppearance="?android:textAppearanceMedium" android:textColor="@color/dk_color_000000" android:id="@id/dkTxtRecentPaymethod" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="20.0dip" android:text="@string/dialog_try_otherpay" android:singleLine="true" />
+                <LinearLayout android:layout_width="fill_parent" android:layout_height="wrap_content">
+                    <LinearLayout android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="20.0dip" android:layout_marginTop="10.0dip" android:layout_weight="1.0">
+                        <RelativeLayout android:layout_width="fill_parent" android:layout_height="wrap_content">
+                            <Button android:id="@id/btn_ali_pay" android:background="@drawable/dk_pay_other_button_selector" android:layout_width="fill_parent" android:layout_height="65.0dip" android:layout_alignParentTop="true" android:layout_centerHorizontal="true" />
+                            <LinearLayout android:gravity="center" android:orientation="vertical" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_centerInParent="true">
+                                <ImageView android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/pay_other_alipay_icon" />
+                                <TextView android:textColor="@color/dk_color_333333" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/channel_alipay" />
+                            </LinearLayout>
+                        </RelativeLayout>
+                    </LinearLayout>
+                    <LinearLayout android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_margin="10.0dip" android:layout_weight="1.0">
+                        <RelativeLayout android:layout_width="fill_parent" android:layout_height="wrap_content">
+                            <Button android:id="@id/btn_gamecard_pay" android:background="@drawable/dk_pay_other_button_selector" android:layout_width="fill_parent" android:layout_height="65.0dip" android:layout_alignParentTop="true" android:layout_centerHorizontal="true" />
+                            <LinearLayout android:gravity="center" android:orientation="vertical" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_centerInParent="true">
+                                <ImageView android:id="@id/pay_tencent_icon_iv" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/pay_other_tencentmm_icon" />
+                                <TextView android:textColor="@color/dk_color_333333" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/channel_tencentmm" />
+                            </LinearLayout>
+                        </RelativeLayout>
+                    </LinearLayout>
+                    <LinearLayout android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="10.0dip" android:layout_marginRight="20.0dip" android:layout_weight="1.0">
+                        <RelativeLayout android:layout_width="fill_parent" android:layout_height="wrap_content">
+                            <Button android:id="@id/btn_quick_pay" android:background="@drawable/dk_pay_other_button_selector" android:layout_width="fill_parent" android:layout_height="65.0dip" android:layout_alignParentTop="true" android:layout_centerHorizontal="true" />
+                            <LinearLayout android:gravity="center" android:orientation="vertical" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_centerInParent="true">
+                                <ImageView android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/pay_other_quickpay_icon" />
+                                <TextView android:textColor="@color/dk_color_333333" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/channel_quickpay" />
+                            </LinearLayout>
+                        </RelativeLayout>
+                    </LinearLayout>
+                </LinearLayout>
+            </LinearLayout>
+        </LinearLayout>
+    </RelativeLayout>
+</RelativeLayout>

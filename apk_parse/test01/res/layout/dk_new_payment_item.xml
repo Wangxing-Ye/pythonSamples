@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <Button android:id="@id/item_main" android:background="@drawable/dk_pay_other_button_selector" android:layout_width="fill_parent" android:layout_height="65.0dip" android:layout_alignParentTop="true" android:layout_centerHorizontal="true" />
+    <LinearLayout android:gravity="center" android:orientation="vertical" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_centerInParent="true">
+        <ImageView android:id="@id/item_img" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/pay_other_alipay_icon" />
+        <TextView android:textColor="@color/dk_color_333333" android:id="@id/item_name" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/channel_alipay" />
+    </LinearLayout>
+    <ImageView android:id="@id/item_extra" android:visibility="gone" android:layout_width="65.0dip" android:layout_height="55.0dip" android:src="@drawable/corner_recommand" android:scaleType="fitXY" android:layout_alignLeft="@id/item_main" android:layout_centerInParent="false" />
+    <com.duoku.platform.single.view.RotateTextView android:textSize="14.0sp" android:textColor="@color/dk_color_ffffff" android:id="@id/item_extra_txt" android:paddingTop="11.0dip" android:paddingRight="25.0dip" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="5.0dip" android:text="@string/dialog_discount" android:layout_alignLeft="@id/item_main" android:layout_alignTop="@id/item_main" />
+</RelativeLayout>

@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:gravity="center|right" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <ImageView android:id="@id/dk_draw_title_iv" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/dk_draw_title" android:layout_centerHorizontal="true" />
+    <RelativeLayout android:id="@id/dk_draw_main_container_rl" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="65.0dip" android:layout_centerHorizontal="true">
+        <com.duoku.platform.single.draw.DKDrawTurntableView android:id="@id/dk_draw_turnableview" android:layout_width="150.0dip" android:layout_height="150.0dip" android:layout_centerInParent="true" />
+        <Button android:id="@id/dk_draw_startdraw_btn" android:background="@drawable/dk_btn_draw_start_selector" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_centerInParent="true" />
+    </RelativeLayout>
+    <Button android:id="@id/dk_draw_close_btn" android:background="@drawable/dk_draw_close_selector" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_alignParentTop="true" android:layout_alignParentRight="true" />
+    <TextView android:textAppearance="?android:textAppearanceLarge" android:textSize="12.0sp" android:typeface="serif" android:textColor="#fffabd02" android:id="@id/dk_draw_historyrecord_tv" android:padding="5.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/dk_draw_check_result" android:layout_below="@id/dk_draw_main_container_rl" android:layout_centerHorizontal="true" android:layout_centerVertical="false" />
+</RelativeLayout>
